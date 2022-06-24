@@ -1,13 +1,7 @@
-package com.uce.edu.demo.matriculaVehiculo.modelo;
+package com.uce.edu.demo.modelo;
 
 import java.time.LocalDateTime;
 
-import org.springframework.beans.factory.config.ConfigurableBeanFactory;
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
-
-@Component
-@Scope(value=ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class Propietario {
 
 	private String nombre;

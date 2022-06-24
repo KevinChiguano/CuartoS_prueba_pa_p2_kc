@@ -1,23 +1,17 @@
-package com.uce.edu.demo.matriculaVehiculo.modelo;
+package com.uce.edu.demo.modelo;
 
 import java.math.BigDecimal;
 
-import org.springframework.beans.factory.config.ConfigurableBeanFactory;
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
-
-@Component
-@Scope(value=ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class Vehiculo {
 
 	private String marca;
 	private String placa;
-	private String Tipo;
+	private String tipo;
 	private BigDecimal precio;
 
 	@Override
 	public String toString() {
-		return "Vehiculo [marca=" + marca + ", placa=" + placa + ", Tipo=" + Tipo + ", precio=" + precio + "]";
+		return "Vehiculo [marca=" + marca + ", placa=" + placa + ", tipo=" + tipo + ", precio=" + precio + "]";
 	}
 
 	// SET y GET
@@ -38,11 +32,11 @@ public class Vehiculo {
 	}
 
 	public String getTipo() {
-		return Tipo;
+		return tipo;
 	}
 
 	public void setTipo(String tipo) {
-		Tipo = tipo;
+		this.tipo = tipo;
 	}
 
 	public BigDecimal getPrecio() {
